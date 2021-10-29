@@ -98,16 +98,18 @@ class SegundaRota extends StatelessWidget {
               ),
               margin: EdgeInsets.all(30),
             ),
-            FloatingActionButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              tooltip: 'Voltar para a Primeira Rota',
-              child: Icon(Icons.arrow_back_sharp),
-            ),
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        tooltip: 'Voltar para a Primeira Rota',
+        child: Icon(Icons.arrow_back_sharp),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
+
