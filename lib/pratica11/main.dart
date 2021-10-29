@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SegundaRota()),
+                    MaterialPageRoute(builder: (context) => novaYork()),
                   );
                 },
               ),
@@ -69,12 +69,13 @@ class Home extends StatelessWidget {
   }
 }
 
-class SegundaRota extends StatelessWidget {
+class novaYork extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Segunda Rota"),
+        title: Text("Nova York"),
+        backgroundColor: Colors.green,
       ),
       body: Center(
         child: Column(
@@ -107,8 +108,9 @@ class SegundaRota extends StatelessWidget {
         },
         tooltip: 'Voltar para a Primeira Rota',
         child: Icon(Icons.arrow_back_sharp),
+        backgroundColor: Colors.green, 
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
     );
   }
 }
