@@ -5,7 +5,6 @@ void main() => runApp(
         initialRoute: '/',
         routes: {
           '/':          (context) => PrimeiraTela(),
-          '/segunda':   (context) => SegundaTela(),
           '/terceira':  (context) => TerceiraTela(),
           '/quarta':    (context) => QuartaTela(),
         },
