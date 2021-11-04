@@ -16,7 +16,7 @@ class HomeState extends State<Home> {
     double peso = double.parse(this.pesoController.text);
     double altura = double.parse(this.alturaController.text);
     double imc = peso / (altura * altura);
-    imc = num.parse(imc.toStringAsPrecision(3));
+    imc = double.parse(imc.toStringAsPrecision(3));
     if (imc < 16) {
       this.resp = 'Você está com magreza grave.\nPois seu IMC é $imc';
     } else if (imc < 17) {
